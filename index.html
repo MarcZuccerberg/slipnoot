@@ -10,7 +10,7 @@
 <body onclick="startAudio()">
   <div class="hero">
     <audio id="iceking" loop>
-      <source src="5 - The Ice King.wav" type="audio/wav">
+      <source src="IceKingSiteTrack.wav" type="audio/wav">
       Your browser does not support the audio element.
     </audio>
 
@@ -33,7 +33,7 @@
   <script>
     function startAudio() {
       var audio = document.getElementById('iceking');
-      audio.play();
+      audio.play().catch(err => console.log("Playback failed:", err));
       document.body.removeEventListener('click', startAudio);
     }
   </script>
