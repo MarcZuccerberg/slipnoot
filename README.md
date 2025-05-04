@@ -1,1 +1,1 @@
-https://slipnootofficial.com
+ https://marczuccerberg.github.io/slipnoot/
