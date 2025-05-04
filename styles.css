@@ -19,34 +19,15 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: fadeIn 3s ease-in-out;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
 }
 
 .content {
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.7);
   padding: 2rem;
   border: 2px solid #a00;
   text-align: center;
   max-width: 500px;
   border-radius: 10px;
-  animation: slideUp 1.5s ease-out 0.5s forwards;
-  opacity: 0;
-}
-
-@keyframes slideUp {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 .profile-pic {
