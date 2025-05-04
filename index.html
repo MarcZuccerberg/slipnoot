@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Slipnoot | The Ice King Reigns</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="hero">
+    <audio id="iceking" loop>
+      <source src="IceKingSiteTrack.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="content">
+      <img src="SlipnootSpotifyProfilePicture.png" alt="Slipnoot Profile Picture" class="profile-pic" />
+      <h1>Slipnoot</h1>
+      <p class="tagline">No Peace. Only Noot.</p>
+      <p class="bio">
+        Born in the frozen wastes of Nootarctica, Slipnoot channels the wrath of the Ice King—Pingu reborn in blood, crowned in black ice.  
+        <br><br>
+        The debut album <strong>Nooticide</strong> has thawed. <strong>The Ice King</strong> has risen. What comes next is colder.
+      </p>
+      <div class="button-container">
+        <a href="https://open.spotify.com/artist/3luopILKtc4w9YsPIXRegI" target="_blank" class="button">Worship on Spotify</a>
+        <a href="http://discord.gg/slipnootnoot" target="_blank" class="button">Join the Cult</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const audio = document.getElementById('iceking');
+      const playAudio = () => {
+        audio.play().catch(err => console.log("Playback failed:", err));
+        document.removeEventListener('click', playAudio);
+      };
+      document.addEventListener('click', playAudio);
+    });
+  </script>
+</body>
+</html>
